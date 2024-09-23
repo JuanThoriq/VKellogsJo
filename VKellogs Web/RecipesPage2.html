@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <title>VKellog's | Recipes</title>
+    <link rel="stylesheet" href="assets/css/RecipesPage2.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">VKellog's</div>
+
+            <div class="navbar-icons">
+                <div class="icon-search">
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="icon-cart">
+                    <i class="ri-shopping-cart-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recipes-section" id="recipes">
+            <h2>Enjoy and Take <br>Care of your <span class="highlight">Meal</span></h2>
+            <p>From Breakfast to Snacks We've Got You Covered</p>
+
+            <a class="btn-small-arrow" href="./LandingPage.html">
+                <i class="ri-arrow-left-s-line"></i>
+            </a>
+
+            <div class="product-filters">
+                <span class="filters">Filter</span>
+                <span class="icon-filters"><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+
+            <div class="recipes-content">
+                <div class="recipes-header">
+                    <button class="arrow arrow-left" onclick="prevRecipe()"><i class="ri-arrow-left-s-line"></i></button>
+    
+                    <div class="recipe-card" data-category="breakfast">
+                        <img src="./assets/img/Frame 6.png" alt="">
+
+                        <div class="card-right">
+                            <h2>Breakfast <span class="highlight">Pop-Tarts®</span> <br> Parfait</h2>
+                            <p>Fresh fruit, yogurt, peanut butter and Pop- <br>
+                                Tarts® get your day off to a delicious start.
+                            </p>
+
+                            <div class="cardright-footer">
+                                <span class="serving-time"><i class="ri-time-line"></i> 10 minutes</span>
+                                <span class="serving-size"><i class="ri-bowl-line"></i> 3 servings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrow arrow-right" onclick="prevRecipe()"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+
+                <div class="recipes-footer">
+                    <div class="footer-ingredients">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>1 1/2 cups plain low-fat yogurt</li>
+                            <li>1/4 cup creamy peanut butter</li>
+                            <li>2 tablespoons maple syrup</li>
+                            <li>2 Kellogg's® Pop-Tarts® Brown Sugar <br> 
+                                Cinnamon toaster pastries</li>
+                            <li>1 1/2 cups sliced fresh strawberries</li>
+                            <li>1 Frozen non-dairy whipped topping, <br> 
+                                thawed (optional)</li>
+                        </ul>
+                    </div>
+                    <div class="footer-directions">
+                        <h4>Directions</h4>
+                        <ol>
+                            <li>In small bowl whisk together <br> yogurt, peanut butter and maple <br> syrup.</li>
+                            <li>In three 12-ounce parfait glasses <br> alternately layer yogurt mixture, <br> KELLOGG'S® POP-TARTS toaster pastry <br> pieces and strawberries. Top with <br> whipped topping (if desired).</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

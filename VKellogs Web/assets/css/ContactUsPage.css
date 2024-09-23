@@ -1,0 +1,212 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+
+    /* Colors */
+    --primary-color: #F60B45;
+    --black-color: black;
+    --white-color: white;
+
+    /* Font and Typography */
+    --font-pacifico: "Pacifico", cursive;
+    --font-poppins: "Poppins", sans-serif;
+
+    /* Font size */
+    --xs-font-size: 0.75rem; 
+    --s-font-size: 1rem;
+    --m-font-size: 1.25rem;
+    --xm-font-size: 2rem;
+    --l-font-size: 1.5rem;
+    --xl-font-size: 3rem;
+    --xxl-font-size: 6rem;
+
+    /* Font weight */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-poppins);
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 7.875rem;
+    background-color: var(--white-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.625rem 3.5rem;
+}
+
+.navbar-brand {
+    font-family: var(--font-pacifico);
+    font-size: var(--xl-font-size);
+    color: var(--primary-color);
+    margin: auto;
+}
+
+/* Back to Landing Page button */
+.btn-small-arrow {
+    display: inline-block;
+    font-size: var(--l-font-size);
+    color: var(--black-color);
+    background-color: var(--white-color);
+    padding: 0.5rem;
+    margin-right: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-small-arrow:hover {
+    color: var(--primary-color);
+    box-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+/* Contact Us Page */
+.contact-us-section {
+    padding: 3.5rem 7.5rem;
+}
+
+.contact-us-section h2 {
+    text-align: center;
+    color: var(--black-color);
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 2rem;
+}
+
+.contact-us-section h2 .highlight {
+    color: var(--primary-color);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 1px solid var(--black-color); */
+    /* width: auto; */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* width: 45%; */
+    /* border: 2px solid var(--black-color); */
+    margin: 1.25rem 0;
+}
+
+.form-group label {
+    color: var(--black-color);
+    font-size: var(--s-font-size);
+    font-weight: var(--font-semibold);
+    text-align: left;
+    text-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.radio-group {
+    display: flex;
+    text-align: center;
+}
+
+.radio-group label {
+    text-align: left;
+    /* margin-right: 0px; */
+}
+
+button[type="submit"] {
+    display: inline-block;
+    width: 8rem;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--black-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: var(--white-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--black-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,24 @@
+Nama : Juan Thoriq Pahlevi
+NIM  : 2602232371
+
+** LINKS FOR WEB DESIGN USING FIGMA **
+📝 Youtube : 
+- https://youtube.com/@designwitharash?si=tUsK3w6u3uFva7Ic (Design with Arash)
+- https://www.figma.com/resource-library/design-basics/ (Figma)
+
+** LINKS FOR WEB BUILDING USING VANILA HTML CSS JS **
+📝 Youtube :
+- https://youtube.com/@fireship?si=fB6BgZqxBIAqJ0sV (Fireship)
+- https://youtube.com/@brocodez?si=u1C9P4S5gusMKjtp (Bro Code)
+- https://youtube.com/@bedimcode?si=RN30mzPUg_TpiDuJ(Bedimcode)
+
+📝 Websites :
+- https://www.w3schools.com (w3schools)
+- https://www.kelloggs.com/en_US/home.html (Kellogs)
+
+**PS :
+😔 Technical :
+- Fitur Filter : Tidak sempat dibikin di Figma dan Web
+- Fitur Search dan Cart : Tidak sempat dibikin di Figma dan Web
+- Responsivitas : 
+

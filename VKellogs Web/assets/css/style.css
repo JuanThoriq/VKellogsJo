@@ -1,0 +1,612 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+
+    /* Colors */
+    --primary-color: #F60B45;
+    --black-color: black;
+    --white-color: white;
+
+    /* Font and Typography */
+    --font-pacifico: "Pacifico", cursive;
+    --font-poppins: "Poppins", sans-serif;
+
+    /* Font size */
+    --xs-font-size: 0.75rem; 
+    --s-font-size: 1rem;
+    --m-font-size: 1.25rem;
+    --xm-font-size: 2rem;
+    --l-font-size: 1.5rem;
+    --xl-font-size: 3rem;
+    --xxl-font-size: 6rem;
+
+    /* Font weight */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-poppins);
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 7.875rem;
+    background-color: var(--white-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.625rem 3.5rem;
+}
+
+.navbar-brand {
+    font-family: var(--font-pacifico);
+    font-size: var(--xl-font-size);
+    color: var(--primary-color);
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0rem;
+}
+
+.nav-item {
+    margin: 0rem 2rem;
+}
+
+.nav-item a {
+    text-align: center;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-semibold);
+    color: var(--black-color);
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem 0rem;
+}
+
+.icon-search, .icon-cart {
+    font-size: 1.875rem;
+    margin: 0rem 0.75rem;
+    padding: 0.313rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon-search:hover, .icon-cart:hover {
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    color: var(--primary-color);
+}
+
+/* HomePage */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 49.313rem;
+    padding: 5.188rem 8rem 8.625rem;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    text-align: left;
+    font-size: var(--xxl-font-size);
+    font-weight: var(--font-extrabold);
+    text-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.hero-content h1 .highlight {
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    text-align: left;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-regular);
+    margin: 0.5rem 0rem 3.375rem;
+}
+
+.hero-content p .highlight {
+    color: var(--primary-color);
+}
+
+.shop-now-btn {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--l-font-size);
+    font-weight: var(--font-semibold);
+    border: 1px solid black;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    margin-right: auto;
+    cursor: pointer;
+    box-shadow: inset -0.5rem -0.25rem 0.625rem rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s;
+}
+
+.icon-arrow {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 2.5rem;
+    margin-right: 1rem;
+}
+
+.shop-now-btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.hero-img {
+    max-width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.best-product-tagline {
+    font-size: var(--l-font-size);
+    font-weight: var(--font-semibold);
+    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);;
+}
+
+.best-product-tagline .highlight {
+    font-family: var(--font-pacifico);
+    color: var(--primary-color);
+}
+
+/* Brand Section */
+.brand-section {
+    background-color: var(--white-color);
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    box-shadow: 0rem -0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    padding: 3.5rem 7.875rem;
+}
+
+.brands-box {
+    border-radius: 2.5rem;
+    box-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+.brands-box h2 {
+    text-align: center;
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-bold);
+}
+
+.brands-box h2 .highlight {
+    color: var(--primary-color);
+    margin-bottom: 1.125rem;
+}
+
+.brand-row-c {
+    display: flex;
+    justify-content: center;
+    gap: 4.375rem;
+    padding: 1.3125rem 2rem;
+    margin-top: 1.125rem;
+    overflow-x: auto;
+}
+
+.brand-row-fs {
+    display: flex;
+    justify-content: center;
+    gap: 4.375rem;
+    padding: 1.3125rem 2rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+}
+
+.brand-row-c img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.brand-row-fs img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Products Section */
+.product-section {
+    /* text-align: center; */
+    padding: 3.5rem 7.5rem;
+}
+
+.product-section h2 {
+    text-align: center;
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-bold);
+}
+
+.product-section h2 .highlight {
+    color: var(--primary-color);
+}
+
+.product-section p {
+    text-align: center;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-regular);
+}
+
+.product-filters {
+    text-align: left;
+    margin: 2rem 0rem;
+    padding: 0.25rem;
+}
+
+.line {
+    font-size: var(--l-font-size);
+}
+
+.filter-btn {
+    font-size: var(--l-font-size);
+    font-weight: var(--font-regular);
+    background-color: var(--white-color);
+    margin-right: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    color: var(--primary-color);
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.4375rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 24.125rem;
+    height: 32.5rem;
+    background-color: var(--white-color);
+    border-radius: 1.25rem;
+    box-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    width: 12.5rem;
+    height: 12.5rem;
+    object-fit: cover;
+}
+
+.product-card .product-info {
+    /* text-align: left; */
+    padding: 0rem 1.875rem;
+}
+
+.product-card .product-type {
+    text-align: left;
+    font-size: var(--s-font-size);
+    font-weight: var(--font-regular) ;
+}
+
+.product-card .product-name {
+    text-align: left;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-medium);
+}
+
+.product-name .highlight {
+    color: var(--primary-color);
+}
+
+.product-rating .icon-star{
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.product-rating .rating {
+    font-size: var(--s-font-size);
+    font-weight: var(--font-regular);
+}
+
+.product-rating .review {
+    font-size: var(--xs-font-size);
+    font-weight: var(--font-regular);
+    opacity: 0.5;
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.product-price .price{
+    font-size: var(--xm-font-size);
+    font-weight: var(--font-semibold);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-view-more {
+    display: block;
+    text-align: center;
+    width: 15.875rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--l-font-size);
+    font-weight: var(--font-semibold);
+    border: 1px solid black;
+    border-radius: 2.5rem;
+    padding: 1rem 3.8125rem;
+    margin: 4.875rem auto;
+    cursor: pointer;
+    box-shadow: inset -0.5rem -0.25rem 0.625rem rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s;
+}
+
+.btn-view-more:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+/* Product Page Delay */
+/* .product-page-delay {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+  
+} */
+
+.product-page-delay h2 {
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-bold);
+    color: var(--black-color);
+    text-shadow: 0.5rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.product-page-delay h2 .highlight {
+    font-family: var(--font-pacifico);
+    color: var(--primary-color);
+}
+
+/* Recipes */
+
+.recipes-section {
+    border-radius: 0 0 1.25rem 1.25rem;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    padding: 0.5rem 7.5rem;
+}
+
+.recipes-section h2{
+    color: var(--black-color);
+    font-size: var(--xl-font-size);
+    font-weight: bold;
+    text-align: center;
+}
+
+.recipes-section h2 .highlight {
+    color: var(--primary-color);
+}
+
+.recipes-section p {
+    text-align: center;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-regular);
+    margin-top: auto;
+}
+
+.recipes-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+    gap: 2rem;
+}
+
+.recipes-header button {
+    font-size: var(--l-font-size);
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.recipe-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    padding: 2rem 3rem;
+
+}
+
+.card-right h2{
+    color: var(--black-color);
+    font-size: var(--xl-font-size);
+    text-align: left;
+}
+
+.card-right h2 .highlight{
+    color: var(--primary-color);
+}
+
+.card-right p{
+    text-align: left;
+
+}
+
+.cardright-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-semibold);
+    padding-right: 10rem;
+    margin-top: 4rem;
+}
+
+.serving-time i, 
+.serving-size{
+    border-radius: 2rem;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.serving-time i:hover, 
+.serving-size i:hover{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    transform: translateY(-10px);
+}
+
+
+
+/* About Us */
+.about-us-section {
+    padding: 3.5rem 7.188rem;
+}
+
+.about-us-section h2 {
+    text-align: center;
+    color: var(--black-color);
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 2.5rem;
+}
+
+.about-us-section h2 .highlight{
+    color: var(--primary-color);
+}
+
+.about-us-section p {
+    text-align: center;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-regular);
+}
+
+.btn-read-more {
+    display: block;
+    text-align: center;
+    width: 15.875rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--l-font-size);
+    font-weight: var(--font-semibold);
+    border: 1px solid black;
+    border-radius: 2.5rem;
+    padding: 1rem 3.8125rem;
+    margin: 4.875rem auto;
+    cursor: pointer;
+    box-shadow: inset -0.5rem -0.25rem 0.625rem rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s;
+}
+
+.btn-read-more:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    box-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 7.875rem;
+    background-color: var(--white-color);
+    padding: 2rem 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer .footer-brand{
+    color: var(--primary-color);
+    font-family: var(--font-pacifico);
+    font-size: var(--l-font-size);
+}
+
+.right-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-footer ul {
+    font-size: var(--m-font-size);
+    font-weight: var(--font-bold);
+}
+
+.right-footer ul li{
+    font-size: var(--s-font-size);
+    font-weight: var(--font-regular);
+}
